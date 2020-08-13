@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <script src="https://kit.fontawesome.com/a9485edcdd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a9485edcdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Phong.js"></script>
+</head>
+<body>
+    
+    <nav id="nav-bar">
+        <ul  class="menu">
+           
+           <li class="item">
+            <i class="fas fa-cart-arrow-down"></i>
+           </li>
+           <li class="item">
+               Tải APP
+           </li>
+           <li class="item">
+            <i class="fas fa-plus-square"></i>
+            
+           </li>
+           <li class="item"> 
+            Đăng Phòng Dễ Dàng
+        </li>
+        </ul>
+    </nav>
+    <section id="slider">
+         <img src="https://scontent.fdad3-2.fna.fbcdn.net/v/l/t1.0-9/117391329_327213068655404_8163077376448250646_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=jEr9L82odnMAX-TxdY4&_nc_ht=scontent.fdad3-2.fna&oh=ad70f29d615a1b3183f77b5ef2caad83&oe=5F53A659" alt="">
+    </section>
+    <div class="timkiem">
+        <div class="xuhuong">Xu Hướng Tìm Kiếm</div>
+        <div class="khuvuc">
+            <div class="kv1">
+          <img src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/117087707_327228585320519_1511738018721967804_n.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=nkiCvGImeU8AX8KS3_V&_nc_ht=scontent.fdad3-2.fna&oh=3cc5f3e988a7f301f20a76922b59d00c&oe=5F52C893" alt="">
+            </div>
+            <div class="kv2">
+                <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.0-9/116906202_327228575320520_2038222639836886252_n.jpg?_nc_cat=109&_nc_sid=730e14&_nc_ohc=zoQMJWWPuaIAX_h7j6N&_nc_ht=scontent.fdad3-3.fna&oh=94a4d1705a0c998a891cd2c978e3c02f&oe=5F552BD2" alt="">
+            </div>
+            <div class="kv3">
+                <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/116795859_327228588653852_7692414369265892320_n.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=HYnnxmUeOmYAX_ErDw8&_nc_ht=scontent.fdad3-1.fna&oh=aeaf5d36ca53e626013ff14efb296edb&oe=5F552C1F" alt="">
+            </div>
+            <div class="kv4">
+                <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.0-9/117112156_327228615320516_4517132038001118760_n.jpg?_nc_cat=108&_nc_sid=730e14&_nc_ohc=jFYUt3dsN-wAX8xSiD1&_nc_ht=scontent.fdad3-3.fna&oh=ca75be17573fbcedfffd7f5d4788ac15&oe=5F52A5F5" alt="">
+            </div>
+            <div class="kv5">
+                <img src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/117104329_327228625320515_6746644894249195380_n.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=CybSvAroduMAX8O_-5e&_nc_ht=scontent.fdad3-2.fna&oh=537fec6676bdb1398bc74473040140d3&oe=5F51E8D4" alt="">
+            </div>
+            <div class="kv6">
+                <img src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/117325632_327228638653847_5621669087551178086_n.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=BBr2VrxdhZIAX_jFrEV&_nc_oc=AQmJ7X9vGTamgh4iZRSCOl0I2U3XFSIJ42US9FwVm7PVBWHmsSlHZh20aCE8q6cT1CEt-jcCoCyZAMVm88yQqEq6&_nc_ht=scontent.fdad3-2.fna&oh=fd7525484387881357af808a5c21b391&oe=5F540633" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section id="products">
+        <!--Hiện thị danh sách Phong-->
+        <div class="items">
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://i.pinimg.com/originals/1a/9e/19/1a9e1962626da7e264988088778aa00c.jpg" alt="" srcset="">
+
+                </div>
+
+                <h2 class="item-title">Kí túc xá/Homestay 67, Quận 7</h2>
+                <div class="item-price">
+                    <span class="item-price-origin">Kỹ túc xã</span>
+                    <span class="item-price-sale">30m2</span>
+                    <span class="item-price-sale">HCM</span>
+                    <span class="item-price-sale">750000 đ</span>
+                </div>
+                <button class="btn btn-primary">Liên Hệ</button>
+            </div>
+            
+        </div>
+        
+    </section>
+    <footer>
+Lâm Văn Hiển Đẹp Trai
+    </footer>
+    <script>
+      var jsonDanhSachPhong = localStorage.getItem('DanhSachPhong');
+  var DanhSachPhong = taoDoiTuongPhong().fromjson(jsonDanhSachPhong);
+  console.log(DanhSachPhong);
+
+  /* b2 :chuyển danh sách đối tượng sản phẩm sang đoạn HTML */
+  var HTML = chuyenDanhSachDoiTuongPhongThanhHTML(DanhSachPhong);
+  /* b3 : gắn đoạn HTML đó vào products */
+  var nodeproducts = document.getElementById('products');
+  nodeproducts.innerHTML = HTML ;
+    </script>
+</body>
+</html>
